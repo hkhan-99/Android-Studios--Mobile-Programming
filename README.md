@@ -1,1 +1,1 @@
-# Apps developed using Kotlin
+# Practice Apps developed using Kotlin
