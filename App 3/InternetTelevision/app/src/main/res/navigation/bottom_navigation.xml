@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.internettelevision.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/ConfigFragment"
+        android:name="com.example.internettelevision.ConfigFragment"
+        android:label="config_fragment"
+        tools:layout="@layout/fragment_config" />
+    <fragment
+        android:id="@+id/ChannelFragment"
+        android:name="com.example.internettelevision.ChannelFragment"
+        android:label="fragment_channel"
+        tools:layout="@layout/fragment_channels" >
+        <action
+            android:id="@+id/channelsToWeb"
+            app:destination="@id/WebFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WebFragment"
+        android:name="com.example.internettelevision.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
+</navigation>
